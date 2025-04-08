@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       rel="icon"
@@ -28,66 +34,79 @@
   </head>
   <body>
     <div class="container">
-      <div>
+      <div class="header">
         <div class="center"><h1>Our Pricing</h1></div>
-        <div class="center">Annually Monthly</div>
+        <div class="center header-toggle-container">
+          <div>Annually</div>
+          <div>
+            <label class="switch">
+              <input type="checkbox" name="internal" />
+            </label>
+          </div>
+          <div>Monthly</div>
+        </div>
       </div>
       <div class="content">
-        <div
-          class="card"
-          style="
-            border-left: 1px solid #ccc;
-            border-top: 1px solid #ccc;
-            border-bottom: 1px solid #ccc;
-          "
-        >
-          <div class="center">Basic</div>
-          <div class="center">&dollar;19.99</div>
-          <div class="center">&dollar;199.99</div>
+        <div class="card">
+          <div class="center feature-title">Basic</div>
+          <div class="center feature-price">$19.99</div>
+          <div class="center feature-price">$199.99</div>
           <div class="card-content">
-            <p>500 GB Storage</p>
-            <p>2 Users Allowed</p>
-            <p>Send up to 3 GB</p>
+            <ul class="feature">
+              <li class="feature-list">
+                <p>500 GB Storage</p>
+              </li>
+              <li class="feature-list">
+                <p>2 Users Allowed</p>
+              </li>
+              <li class="feature-list">
+                <p>Send up to 3 GB</p>
+              </li>
+            </ul>
           </div>
-          <div class="more-button">Learn More</div>
+          <div class="more-button more-button-inactive">Learn More</div>
         </div>
-        <div class="card" style="border: 1px solid #ccc">
-          <div class="center">Professional</div>
-          <div class="center">&dollar;24.99</div>
-          <div class="center">&dollar;249.99</div>
+        <div class="card middle active">
+          <div class="center feature-title">Professional</div>
+          <div class="center feature-price">$24.99</div>
+          <div class="center feature-price">$249.99</div>
           <div class="card-content">
-            <p>1TB Storage</p>
-            <p>5 Users Allowed</p>
-            <p>Send up to 10 GB</p>
+            <ul class="feature">
+              <li class="feature-list">
+                <p>1TB Storage</p>
+              </li>
+              <li class="feature-list">
+                <p>5 Users Allowed</p>
+              </li>
+              <li class="feature-list">
+                <p>Send up to 10 GB</p>
+              </li>
+            </ul>
           </div>
-          <div class="more-button">Learn More</div>
+          <div class="more-button more-button-active">Learn More</div>
         </div>
-        <div
-          class="card"
-          style="
-            border-right: 1px solid #ccc;
-            border-top: 1px solid #ccc;
-            border-bottom: 1px solid #ccc;
-          "
-        >
-          <div class="center">Master</div>
-          <div class="center">&dollar;39.99</div>
-          <div class="center">&dollar;399.99</div>
+        <div class="card">
+          <div class="center feature-title">Master</div>
+          <div class="center feature-price">$39.99</div>
+          <div class="center feature-price">$399.99</div>
           <div class="card-content">
-            <p>2TB Storage</p>
-            <p>10 Users Allowed</p>
-            <p>Send up to 20 GB</p>
+            <ul class="feature">
+              <li class="feature-list">
+                <p>2TB Storage</p>
+              </li>
+              <li class="feature-list">
+                <p>10 Users Allowed</p>
+              </li>
+              <li class="feature-list">
+                <p>Send up to 20 GB</p>
+              </li>
+            </ul>
           </div>
-          <div class="more-button">Learn More</div>
+          <div class="more-button more-button-inactive">Learn More</div>
         </div>
       </div>
     </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <div class="attribution"></div>
   </body>
 </html>
